@@ -1,1 +1,338 @@
-/* Add you CSS here */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.logo-icon {
+  font-size: 50px;
+  color: white;
+}
+
+nav {
+  background-color: rgba(74, 74, 74, 0.75);
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0.5rem 32px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: clamp(16px, 4vw, 48px);
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-size: 22px;
+  padding: 5px 5px;
+  gap: 3px;
+}
+
+.nav-links li a:hover {
+  background-image: linear-gradient(0deg, #d9afd9 0%, #97d9e1 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.nav-links li:hover {
+  transform: scale(1.04);
+  transition: transform 0.5s ease;
+}
+
+.nav-links i.material-icons {
+  font-size: 26px;
+}
+
+/* Section 1 - Header */
+.header {
+  height: 100vh;
+  text-align: center;
+  background-color: #ffffff;
+  background-image: linear-gradient(to left, #D9AFD9 0%, #97D9E1 100%);
+}
+
+.header h2 {
+  margin: 0px;
+  text-align: left;
+  font-weight: bolder;
+  font-size: 1.7rem;
+  padding-left: 3rem;
+  padding-top: 6.5rem;
+}
+
+.header img {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 50%;
+  margin-top: 11vh;
+  object-fit: cover;
+}
+
+.header h1 {
+  font-size: 2.7rem;
+}
+
+.header h3 {
+  font-size: 1.5rem;
+  background-image: linear-gradient(180deg, #9333ea 10%, #3b82f6 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+.header p {
+  font-weight: 450;
+  padding-top: 15px;
+  font-size: 1.2rem;
+  font-weight: 490;
+}
+
+/* Section 2 - About */
+.About {
+  height: 95vh;
+  background-color: #ffffff;
+  background-image: linear-gradient(to left, #D9AFD9 0%, #97D9E1 100%);
+}
+
+#section2 {
+  padding: 20px;
+  padding-bottom: 6rem;
+}
+
+.About h2 {
+  text-align: center;
+  font-size: 2.65rem;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.About p {
+  text-align: justify;
+  line-height: 1.8;
+  font-size: 1.2vw;
+  padding-top: 1vw;
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-weight: 490;
+}
+
+.about-boxes {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  padding-top: 1rem;
+  width: 95vw;
+  justify-content: center;
+  padding-left: 1rem;
+}
+
+.box {
+  background-color: #D3D3D3;
+  background-image: linear-gradient(to left, #d9afd9a1 0%, #97dae1a1 100%);
+  border-radius: 8px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  padding: 1rem;
+  width: 30.5%;
+  height: 30vh;
+  text-align: left;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.box:hover {
+  transform: scale(1.03);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.box h3 {
+  font-size: 1.6rem;
+  padding-left: 10px;
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  padding-left: 12px;
+}
+
+.box ul li {
+  font-size: 1.2vw;
+  margin: 10px 0;
+  padding-bottom: 8px;
+  font-weight: 490;
+}
+
+/* Section 3 - Classes */
+.Classes {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #ffffff;
+  background-image: linear-gradient(to left, #D9AFD9 0%, #97D9E1 100%);
+}
+
+#section3 {
+  padding: 20px;
+  padding-bottom: 6rem;
+}
+
+#section3 h2 {
+  text-align: center;
+  font-size: 2.65rem;
+  padding-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Classes-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.Classes-content>div {
+  background: #d3d3d37e;
+  border: 0px solid #ffffff;
+  border-radius: 10px;
+  box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.3);
+  width: 30.8vw;
+  height: 60rem;
+  text-align: center;
+  overflow: visible;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.Classes-content>div:hover {
+  transform: translateY(-15px);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.Classes-content img {
+  width: 100%;
+  height: 34vh;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.Classes-content h3 {
+  margin: 25px 0;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #4B9CD3;
+}
+
+.Classes-content ul {
+  list-style: none;
+  padding: 15px;
+  padding-left: 1.8rem;
+  margin: 20px;
+  text-align: left;
+}
+
+.Classes-content ul li {
+  margin: 7px 7px;
+  font-size: 1.2em;
+  font-weight: 499;
+  padding-bottom: 4px;
+}
+
+.Skills {
+  margin: 0;
+  padding-bottom: 0;
+  background-color: #ffffff;
+  background-image: linear-gradient(to left, #D9AFD9 0%, #97D9E1 100%);
+  height: 108vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#section4 {
+  padding: 20px;
+  padding-bottom: 7.2rem;
+}
+
+.Skills h2 {
+  text-align: center;
+  font-size: 2.65rem;
+  padding-top: 20px;
+  margin-bottom: 3rem;
+}
+
+.Skills h3 {
+  font-size: 1.5em;
+  text-align: left;
+  padding-left: 6px;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem;
+}
+
+.icon-group {
+  padding-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 8rem;
+}
+
+.icon-card img {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10%;
+  background-color: rgb(229, 225, 225);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  object-fit: cover;
+}
+
+.icon-card img:hover {
+  transform: scale(1.05);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.icon-label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Footer {
+  text-align: center;
+  background-color: #3d3d3d;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  color: white;
+  opacity: 80%;
+  font-weight: 500;
+}
